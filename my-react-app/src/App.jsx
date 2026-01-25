@@ -1,6 +1,9 @@
-// import Button from "./Button/Button.jsx";
-// import Student from "./Student/Student.jsx";
-// import UserGreeting from "./UserGreeting/UserGreeting,.jsx";
+import Button from "./Button/Button.jsx";
+import ProfilePicture from "./ProfilePicture/ProfilePicture.jsx";
+import MyComponent from "./MyComponent/MyComponent.jsx";
+import Counter from "./Counter/Counter.jsx";
+import Student from "./Student/Student.jsx";
+import UserGreeting from "./UserGreeting/UserGreeting,.jsx";
 import List from "./List/List.jsx";
 
 function App() {
@@ -25,6 +28,14 @@ function App() {
       {/* Diff Styling methods */}
       {/* <Button></Button> */}
 
+      {/* React Click Events */}
+      {/* <ProfilePicture></ProfilePicture> */}
+
+      {/* React Hooks useState + Click Events */}
+      {/* <MyComponent></MyComponent> */}
+
+      <Counter></Counter>
+
       {/* Props */}
       {/* <Student name="Spongebob" age="30" isStudent={true}></Student>
       <Student name="Jerry" age={25} isStudent={false}></Student>
@@ -36,11 +47,10 @@ function App() {
       {/* <UserGreeting isLoggedIn={true}></UserGreeting> */}
 
       {/* RENDER LISTS USING PROPS and adding conditional rendering */}
-
-      {fruits.length > 0 && <List items={fruits} category="Fruits"></List>}
+      {/* {fruits.length > 0 && <List items={fruits} category="Fruits"></List>}
       {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables"></List>
-      )}
+      )} */}
     </>
   );
 }

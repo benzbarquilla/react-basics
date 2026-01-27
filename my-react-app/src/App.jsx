@@ -5,6 +5,7 @@ import Counter from "./Counter/Counter.jsx";
 import Student from "./Student/Student.jsx";
 import Object from "./Objects/Object.jsx";
 import Array from "./Arrays/Array.jsx";
+import ArrayObj from "./ArrayOfObjects/ArrayObj.jsx";
 import UserGreeting from "./UserGreeting/UserGreeting,.jsx";
 import List from "./List/List.jsx";
 
@@ -43,7 +44,10 @@ function App() {
       {/* <Object></Object> */}
 
       {/* Arrays using useState */}
-      <Array></Array>
+      {/* <Array></Array> */}
+
+      {/* Array and Object using useState */}
+      <ArrayObj></ArrayObj>
 
       {/* Props */}
       {/* <Student name="Spongebob" age="30" isStudent={true}></Student>

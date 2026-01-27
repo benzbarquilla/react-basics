@@ -10,10 +10,17 @@ function Counter() {
   const [payment, setPayment] = useState("");
   const [shipping, setShipping] = useState("");
 
-  // function to handle increment and decrement
-  const increment = () => {
-    setCount(count + 1);
-  };
+  // function to handle increment and decrement pwede sad i const arriw function pag daghan
+  // const increment = () => {
+  //   setCount(count + 1);
+  // };
+  // Same ra pero another sample + updater function
+  function increment() {
+    setCount((c) => c + 1);
+    setCount((c) => c + 1);
+
+    setCount((c) => c + 1);
+  }
 
   const decrement = () => {
     setCount(count - 1);
@@ -41,64 +48,64 @@ function Counter() {
   }
 
   return (
-    // <div className={styles.container}>
-    //   <p className={styles.countDisplay}>{count}</p>
-    //   <button className={styles.counterBtn} onClick={decrement}>
-    //     Decrement
-    //   </button>
-    //   <button className={styles.counterBtn} onClick={reset}>
-    //     Reset
-    //   </button>
-    //   <button className={styles.counterBtn} onClick={increment}>
-    //     Increment
-    //   </button>
-    // </div>
-
-    <div>
-      <input value={name} onChange={handleNameChange}></input>
-      <p>Name: {name}</p>
-      <input
-        value={quantity}
-        onChange={handleChangeQuantity}
-        type="number"
-      ></input>
-      <p>Quantity: {quantity}</p>
-      <textarea
-        name=""
-        id=""
-        value={comment}
-        onChange={handleCommentChange}
-        placeholder="Enter delivery instructions"
-      ></textarea>
-      <p>Comment: {comment}</p>
-      <select value={payment} onChange={handlePaymentChange}>
-        <option value="">Select an Option</option>
-        <option value="Visa">Visa</option>
-        <option value="Mastercard">Mastercard</option>
-        <option value="Giftcard">Gift Card</option>
-      </select>
-      <p>Payment: {payment}</p>
-      <label htmlFor="">
-        <input
-          type="radio"
-          value="Pick Up"
-          checked={shipping === "Pick Up"}
-          onChange={handleShippingChange}
-        />
-        Pick up
-      </label>{" "}
-      <br></br>
-      <label htmlFor="">
-        <input
-          type="radio"
-          value="Delivery"
-          checked={shipping === "Delivery"}
-          onChange={handleShippingChange}
-        />
-        Delivery
-      </label>
-      <p>Shipping: {shipping}</p>
+    <div className={styles.container}>
+      <p className={styles.countDisplay}>{count}</p>
+      <button className={styles.counterBtn} onClick={decrement}>
+        Decrement
+      </button>
+      <button className={styles.counterBtn} onClick={reset}>
+        Reset
+      </button>
+      <button className={styles.counterBtn} onClick={increment}>
+        Increment
+      </button>
     </div>
+
+    // <div>
+    //   <input value={name} onChange={handleNameChange}></input>
+    //   <p>Name: {name}</p>
+    //   <input
+    //     value={quantity}
+    //     onChange={handleChangeQuantity}
+    //     type="number"
+    //   ></input>
+    //   <p>Quantity: {quantity}</p>
+    //   <textarea
+    //     name=""
+    //     id=""
+    //     value={comment}
+    //     onChange={handleCommentChange}
+    //     placeholder="Enter delivery instructions"
+    //   ></textarea>
+    //   <p>Comment: {comment}</p>
+    //   <select value={payment} onChange={handlePaymentChange}>
+    //     <option value="">Select an Option</option>
+    //     <option value="Visa">Visa</option>
+    //     <option value="Mastercard">Mastercard</option>
+    //     <option value="Giftcard">Gift Card</option>
+    //   </select>
+    //   <p>Payment: {payment}</p>
+    //   <label htmlFor="">
+    //     <input
+    //       type="radio"
+    //       value="Pick Up"
+    //       checked={shipping === "Pick Up"}
+    //       onChange={handleShippingChange}
+    //     />
+    //     Pick up
+    //   </label>{" "}
+    //   <br></br>
+    //   <label htmlFor="">
+    //     <input
+    //       type="radio"
+    //       value="Delivery"
+    //       checked={shipping === "Delivery"}
+    //       onChange={handleShippingChange}
+    //     />
+    //     Delivery
+    //   </label>
+    //   <p>Shipping: {shipping}</p>
+    // </div>
   );
 }
 

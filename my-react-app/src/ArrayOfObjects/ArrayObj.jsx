@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 
 function ArrayObj() {
   const [cars, setCars] = useState([]);
@@ -14,7 +14,7 @@ function ArrayObj() {
     setCarModel("");
   }
   function handleRemoveCar(index) {
-    setCars((c) => c.filter((_, index) => index));
+    setCars((c) => c.filter((_, i) => index));
   }
   function handleYearChange(event) {
     setCarYear(event.target.value);

@@ -1,13 +1,14 @@
 import Button from "./Button/Button.jsx";
 import ProfilePicture from "./ProfilePicture/ProfilePicture.jsx";
-import MyComponent from "./MyComponent/MyComponent.jsx";
+import UserGreeting from "./UserGreeting/UserGreeting,.jsx";
+import List from "./List/List.jsx";
+// import MyComponent from "./MyComponent/MyComponent.jsx";
 import Counter from "./Counter/Counter.jsx";
 import Student from "./Student/Student.jsx";
 import Object from "./Objects/Object.jsx";
 import Array from "./Arrays/Array.jsx";
 import ArrayObj from "./ArrayOfObjects/ArrayObj.jsx";
-import UserGreeting from "./UserGreeting/UserGreeting,.jsx";
-import List from "./List/List.jsx";
+import MyComponent from "./UseEffect/MyComponent.jsx";
 
 function App() {
   // const fruits = [
@@ -47,7 +48,10 @@ function App() {
       {/* <Array></Array> */}
 
       {/* Array and Object using useState */}
-      <ArrayObj></ArrayObj>
+      {/* <ArrayObj></ArrayObj> */}
+
+      {/* useEffect intro */}
+      <MyComponent></MyComponent>
 
       {/* Props */}
       {/* <Student name="Spongebob" age="30" isStudent={true}></Student>

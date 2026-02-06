@@ -12,6 +12,7 @@ function UserGreeting(props) {
     <h2 className={styles.loginPrompt}>Please Log in to Continue</h2>
   );
 
+  // Method 2
   return props.isLoggedIn ? welcomeMessage : loginPrompt;
 
   //   // Method 1
